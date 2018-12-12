@@ -19,14 +19,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblAltitude: UILabel!
     @IBOutlet weak var lblDistence: UILabel!
     
-    
-    var flag = true
+
     @IBAction func locationUpdate(_ sender: Any) {
-    /*    if flag == true{
-         
-        }else{
-            flag = true
-        }*/
         let btn = sender as! UIButton
         if btn.title(for: .normal) == "위치정보수집시작"{
             locationManager.startUpdatingLocation()

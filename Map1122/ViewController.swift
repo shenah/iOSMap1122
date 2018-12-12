@@ -45,6 +45,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showMap(_ sender: Any) {
+        //역 지오코딩: 주소정보를 가지고 위치정보를 찾아오는 것
+        //다음이나 네이버의 오픈 API를 이용해도 되고 애플의 경우는 MapKit에서이 기능을 제공합니다.
+        //구글도 제공
         if let stateString = state.text,
             let cityString = city.text,
             let addressString = address.text,
